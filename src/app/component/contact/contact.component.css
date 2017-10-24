@@ -1,0 +1,60 @@
+#icon {
+    display: inline-block;
+    background: #cfcbb8;
+    width: 80px;
+    height: 80px;
+    border-radius: 60%;
+    text-align: center;
+    line-height: 80px;
+    
+    
+}
+#icon-phone {
+    display: inline-block;
+    background: #cfcbb8;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    vertical-align: left;
+    
+    
+}
+
+.icon-phone {
+    
+    color: #001a2b;
+}
+.icon-qrcode {
+    
+    color: #001a2b;
+}
+.icon-map {
+    
+    color: #001a2b;
+}
+.icon-fb {
+    
+    color: #001a2b;
+}
+#icon:hover {
+	background: rgba(0,0,0,0);
+	color: #3a7999;
+	box-shadow: inset 0 0 0 3px #3a7999;
+}
+
+
+
+#rowicon{
+   padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* ============ */
+
+
+#text{
+    font-size: 15px;
+   
+}

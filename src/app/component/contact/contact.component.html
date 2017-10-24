@@ -1,0 +1,50 @@
+
+<div ng-app="" >
+<div class="row" class id="circle" >
+  <div class id="rowicon">
+    <div class id="icon" ng-click="showme=true">
+      <span class="fa-stack fa-1x" >
+        <i class="fa fa-circle fa-stack-2x icon-phone"></i>
+        <i class="fa fa-phone fa-stack-1x">
+          <!-- <p id="text">
+            0851111111
+
+          </p> -->
+        </i>
+        
+        
+      </span>
+    </div>
+    <div class id="icon">
+      <span class="fa-stack fa-1x">
+        <i class="fa fa-circle fa-stack-2x icon-qrcode"></i>
+        <i class="fa fa-qrcode fa-stack-1x"></i>
+      </span>
+    </div>
+    <div class id="icon">
+      <span class="fa-stack fa-1x">
+        <i class="fa fa-circle fa-stack-2x icon-map"></i>
+        <i class="fa fa-map-marker fa-stack-1x"></i>
+      </span>
+    </div>
+    <div class id="icon">
+      <span class="fa-stack fa-1x">
+        <i class="fa fa-circle fa-stack-2x icon-fb"></i>
+        <i class="fa fa-facebook-square fa-stack-1x"></i>
+      </span>
+    </div>
+  </div>
+</div>
+
+
+
+<a ng-click="showme=true">Show</a>
+<button ng-click="showme=false">Hide</button> 
+
+<div class="wrapper">
+  <p ng-hide="showme">It will appear here!</p>
+  <h2 ng-show="showme">This is mah content, yo!</h2>
+</div>
+
+</div>
+<!-- //////// -->
