@@ -7,6 +7,8 @@ import { OurServiceComponent } from './component/our-service/our-service.compone
 import { OurProductComponent } from './component/our-product/our-product.component';
 import { BannerComponent } from './component/banner/banner.component';
 
+import * as primeng from 'primeng/primeng';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,8 @@ import { BannerComponent } from './component/banner/banner.component';
     BannerComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    primeng.GMapModule
   ],
   providers: [],
   bootstrap: [AppComponent]
