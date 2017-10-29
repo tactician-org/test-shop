@@ -1,0 +1,50 @@
+<!-- <tr *ngFor="let row of buildArr(items);let i = index">
+    <td *ngFor="let item of row">
+        <div>
+            <img width="300dp" height="300dp" src={{item}} class="btn btn-primary btn-modal" data-toggle="modal" data-target="#imgModal">
+        </div>
+    </td>
+</tr> -->
+<div class="container">
+    <div class="row">
+
+
+        <table st-table="rowCollection" class="table table-striped">
+
+            <tr *ngFor="let row of buildArr(items);let i = index">
+                <th *ngFor="let item of row">
+
+                    <img width="200px" height="200px" src={{item}} class="btn btn-modal" data-toggle="modal" data-target="#imgModal">
+
+                    <div id="imgModal" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="btn btn-secondary" data-dismiss="modal">
+                                        close
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <img width="300dp" height="300dp" src={{item}} class="btn btn-primary btn-modal" data-toggle="modal" data-target="#imgModal">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </th>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- <h3>Simple table with no thead, tbody</h3>
+<table class="table table-striped" wt-responsive-table>
+    <tr>
+        <th>Name</th>
+        <th>Version</th>
+        <th>Language</th>
+        <th>Maintainer</th>
+        <th>Stars</th>
+    </tr>
+
+</table> -->

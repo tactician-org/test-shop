@@ -6,6 +6,7 @@ import { ContactComponent } from './component/contact/contact.component';
 import { OurServiceComponent } from './component/our-service/our-service.component';
 import { OurProductComponent } from './component/our-product/our-product.component';
 import { BannerComponent } from './component/banner/banner.component';
+import { MapComponent } from './component/map/map.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { BannerComponent } from './component/banner/banner.component';
     ContactComponent,
     OurServiceComponent,
     OurProductComponent,
-    BannerComponent
+    BannerComponent,
+    MapComponent
   ],
   imports: [
     GMapModule,
