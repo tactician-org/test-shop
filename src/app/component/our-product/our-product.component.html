@@ -5,17 +5,14 @@
         </div>
     </td>
 </tr> -->
-<div class="container">
+<!-- <div class="container">
     <div class="row">
 
 
         <table st-table="rowCollection" class="table table-striped">
-
-            <tr *ngFor="let row of buildArr(items);let i = index">
+            <tr *ngFor="let row of items ">
                 <th *ngFor="let item of row">
-
-                    <img width="200px" height="200px" src={{item}} class="btn btn-modal" data-toggle="modal" data-target="#imgModal">
-
+                    <img width="100%" height="auto" src={{item}} class="btn btn-modal img-thumbnail" data-toggle="modal" data-target="#imgModal">
                     <div id="imgModal" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
@@ -26,7 +23,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <div class="row">
-                                        <img width="300dp" height="300dp" src={{item}} class="btn btn-primary btn-modal" data-toggle="modal" data-target="#imgModal">
+                                        <img width="300dp" height="300dp" src={{items}} class="btn btn-primary btn-modal" data-toggle="modal" data-target="#imgModal">
                                     </div>
                                 </div>
                             </div>
@@ -36,7 +33,7 @@
             </tr>
         </table>
     </div>
-</div>
+</div> -->
 <!-- <h3>Simple table with no thead, tbody</h3>
 <table class="table table-striped" wt-responsive-table>
     <tr>
@@ -48,3 +45,55 @@
     </tr>
 
 </table> -->
+
+<!-- <div class="ui-g" *ngFor="let item of items">
+    <div class="ui-g-3">
+        <img width="300dp" height="300dp" src={{item}} class="btn btn-modal" data-toggle="modal" data-target="#imgModal">
+    </div>
+    <div class="ui-g-3"></div>
+    <div class="ui-g-3"></div>
+    <div class="ui-g-3"></div>
+</div> -->
+<!-- <div class="container">
+    <div class="row">
+        <div *ngFor="let item of items;let i = index ">
+
+            <div class="form-group" class="col-md-3">
+                <img width="200dp" height="200dp" src={{item}} class="btn btn-modal" data-toggle="modal" data-target="#imgModal">
+
+            </div>
+
+            <div id="imgModal" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="btn btn-secondary" data-dismiss="modal">
+                                close
+                            </button>
+                        </div>
+                        <div *ngFor="let item of items;let i = index ">
+                            <div class="modal-body" *ngIf="item != item">
+                                <div class="row">
+                                    <img width="300dp" height="300dp" src={{item}} class="btn btn-modal" data-toggle="modal" data-target="#imgModal">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div> -->
+
+
+<div class="container">
+    <div *ngFor="let item of itemImage">
+        <div class="col-lg-3 col-md-4 col-xs-12">
+            
+            <img width="200px" height="200px" src={{item.items}} alt="" class="btn btn-modal" data-toggle="modal" data-target="#imgModal"
+                id="b1">
+                <p style="text-align: center">{{item.desc}}</p>
+        </div>
+    </div>
+</div>

@@ -15,12 +15,11 @@ export class MapComponent implements OnInit {
 
   ngOnInit() {
     this.options = {
-      center: { lat: 36.890257, lng: 30.707417 },
-      zoom: 12
-
+      center: { lat: 13.7463783, lng: 100.5348459 },
+      zoom: 18
 
     };
-    this.overlays.push(new google.maps.Marker({position:{lat: 36.890257, lng:30.707417 }}))
+    this.overlays.push(new google.maps.Marker({position:{lat: 13.7463783, lng:100.5348459 }}))
   }
 
   

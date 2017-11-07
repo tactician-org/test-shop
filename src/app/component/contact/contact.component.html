@@ -1,43 +1,66 @@
-
-<div ng-app="" >
-<div class="row" class id="circle" >
-  <div class id="rowicon">
-    <div class id="icon" ng-click="showme=true">
-      <span class="fa-stack fa-1x" >
-        <i class="fa fa-circle fa-stack-2x icon-phone"></i>
-        <i class="fa fa-phone fa-stack-1x">
-          <!-- <p id="text">
-            0851111111
-
-          </p> -->
-        </i>
-        
-        
-      </span>
-    </div>
-    <div class id="icon">
-      <span class="fa-stack fa-1x">
-        <i class="fa fa-circle fa-stack-2x icon-qrcode"></i>
-        <i class="fa fa-qrcode fa-stack-1x"></i>
-      </span>
-    </div>
-    <div class id="icon">
-      <span class="fa-stack fa-1x">
-        <i class="fa fa-circle fa-stack-2x icon-map"></i>
-        <i class="fa fa-map-marker fa-stack-1x"></i>
-      </span>
-    </div>
-    <div class id="icon">
-      <span class="fa-stack fa-1x">
-        <i class="fa fa-circle fa-stack-2x icon-fb"></i>
-        <i class="fa fa-facebook-square fa-stack-1x"></i>
-      </span>
-    </div>
+<div class="container">
+  <div class="row">
+    <!-- <div class id="rowicon"> -->
+      <div class id="icon" ng-click="showme=true" class="col-md-3" class="form-group" >
+        <span class="fa-stack fa-1x">
+          <i class="fa fa-circle fa-stack-2x icon-phone"></i>
+          <i class="fa fa-phone fa-stack-1x"> 
+           
+          </i>
+        </span>
+      </div>
+      <div class id="icon" class="col-md-3" class="form-group" >
+        <span class="fa-stack fa-1x">
+          <i class="fa fa-circle fa-stack-2x icon-qrcode"></i>
+          <i class="fa fa-qrcode fa-stack-1x"></i>
+        </span>
+      </div>
+      <div class id="icon" class="col-md-3" class="form-group" > 
+        <span class="fa-stack fa-1x">
+          <i class="fa fa-circle fa-stack-2x icon-map"></i>
+          <i class="fa fa-map-marker fa-stack-1x"></i>
+        </span>
+      </div>
+      <div class id="icon" class="col-md-3" class="form-group" > 
+        <span class="fa-stack fa-1x">
+          <i class="fa fa-circle fa-stack-2x icon-fb"></i>
+          <i class="fa fa-facebook-square fa-stack-1x"></i>
+        </span>
+      </div>
+    <!-- </div> -->
   </div>
 </div>
 
-
-
-
-</div>
 <!-- //////// -->
+<!-- 
+<div class="container">
+    <div class="row">
+        <div *ngFor="let item of items;let i = index ">
+
+            <div class="form-group" class="col-md-3">
+                <img width="200dp" height="200dp" src={{item}} class="btn-modal img-circle" data-toggle="modal" data-target="#imgModal" >
+
+            </div>
+
+            <div id="imgModal" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="btn btn-secondary" data-dismiss="modal">
+                                close
+                            </button>
+                        </div>
+                        <div *ngFor="let item of items;let i = index ">
+                            <div class="modal-body" *ngIf="item != item">
+                                <div class="row">
+                                    <img width="300dp" height="300dp" src={{item}} class="btn btn-modal" data-toggle="modal" data-target="#imgModal">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div> -->
