@@ -5,8 +5,101 @@
     height: auto;
 }
 
+#contact
+{
+    color: #cfcbb8;
+    background-color: #001a2b;
+    padding-top: 50px;
+    padding-bottom: 50px;
+      
+}
+
 #product {
     color: #001a2b;
     background-color: #cfcbb8;
+    padding-top: 50px;
+    padding-bottom: 50px;
+      
 }
+#service
+{
+    color: #cfcbb8;
+    background-color: #001a2b;
+    padding-top: 50px;
+    padding-bottom: 50px;
+      
+}
+.goToTop
+{
+    position: fixed;
+    width: 60px;
+    height: 40px;
+    bottom: 0;
+    right: 0;
+    z-index: 100000;
+    cursor: pointer;
+    margin: 10px;
+    -moz-opacity: 0.60;
+    opacity: .60;
+    filter: alpha(opacity=60);
+}
+.testheight {
+    height:1200px;
+    font-size:20px;
+    text-align:center;
+    padding:100px 20px;
+  }
+  .scrolltop {
+      display:none;
+      width:100%;
+      margin:0 auto;
+      position:fixed;
+      bottom:20px;
+      right:10px;	
+  }
+  .scroll {
+      position:absolute;
+      right:20px;
+      bottom:20px;
+      background:#b2b2b2;
+      background:rgba(178,178,178,0.7);
+      padding:20px;
+      text-align: center;
+      margin: 0 0 0 0;
+      cursor:pointer;
+      transition: 0.5s;
+      -moz-transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s; 		
+  }
+  .scroll:hover {
+      background:rgba(178,178,178,1.0);
+      transition: 0.5s;
+      -moz-transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s; 		
+  }
+  .scroll:hover .fa {
+      padding-top:-10px;
+  }
+  .scroll .fa {
+      font-size:30px;
+      margin-top:-5px;
+      margin-left:1px;
+      transition: 0.5s;
+      -moz-transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s; 	
+  }
 
+  #toTop {position:fixed;bottom:5px;right:5px;cursor:pointer;}
+
+  .footer
+  {
+    color: #cfcbb8;
+    background-color: #001a2b;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+ 

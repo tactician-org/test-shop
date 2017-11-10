@@ -30,34 +30,35 @@
         </div>
     </div> -->
 
-    <div class="container">
-      
-            <div *ngFor="let item of items">
-                <div class="col-lg-3 col-md-4 col-xs-6">
-                    
-                    <img width="120dp" height="120dp" src={{item}}  alt="" class="img-circle btn-modal" data-toggle="modal" data-target="#imgModal"
-                        id="b1">
-                        <!-- <p style="text-align: center">{{item.desc}}</p> -->
+<div class="container">
+    <!-- col-md-3 col-sm-6 col-xs-12     col-6 col-md-3 col-xs-3  col-lg-3 col-sm-3 col-md-3  -->
+    <div *ngFor="let item of items">
+            
+        <div class="col-xs-12 col-xs-6 col-sm-3 col-md-3">
 
-                        <div id="imgModal" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button class="btn btn-secondary" data-dismiss="modal">
+            <img width="120dp" height="120dp" src={{item}} alt="" class="img-circle btn-modal" data-toggle="modal" data-target="#imgModal"
+                id="b1">
+            <!-- <p style="text-align: center">{{item.desc}}</p> -->
+
+            <div id="imgModal" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="btn btn-secondary" data-dismiss="modal">
                                                 close
                                             </button>
-                                        </div>
-                                        <div *ngFor="let item of items;let i = index ">
-                                            <div class="modal-body" *ngIf="item != item">
-                                                <div class="row">
-                                                    <img width="300dp" height="300dp" src={{item}} class="btn btn-modal" data-toggle="modal" data-target="#imgModal">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                        </div>
+                        <div *ngFor="let item of items;let i = index ">
+                            <div class="modal-body" *ngIf="item != item">
+                                <div class="row">
+                                    <img width="300dp" height="300dp" src={{item}} class="btn btn-modal" data-toggle="modal" data-target="#imgModal">
                                 </div>
                             </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-       
+        </div>
     </div>
+
+</div>

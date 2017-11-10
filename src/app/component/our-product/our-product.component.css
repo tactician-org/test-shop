@@ -2,3 +2,151 @@
     color: #001a2b;
     background-color: #cfcbb8;
 }
+
+.card-4 {
+    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  .card {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    height: 250px;
+    margin: 1rem;
+    position: relative;
+    width: 250px;
+  }
+  .card-1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  
+  .card-1:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+
+  .popover__wrapper {
+    position: relative;
+    margin-top: 1.5rem;
+    display: inline-block;
+}
+.popover__content {
+       
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    vertical-align: middle;
+    /* left: -200px;
+    transform: translate(0, -200px); */
+    /* background-color: #cfcbb8;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    width: auto; */
+}
+.popover__content:before {
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    right: calc(50% - 10px);
+    top: -8px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #cfcbb8 transparent;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.popover__wrapper:hover .popover__content {
+    z-index: 10;
+    opacity: 1;
+    
+    /* center the element */
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    /* give it dimensions */
+    min-height: 10em;
+    width: 90%;
+
+    visibility: visible;
+    transform: translate(0,-10px);
+    /* transition-timing-function: ease; */
+    transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 5);
+    /* padding: 1em .75em; */
+
+
+    
+}
+.popover__message {
+  text-align: center;
+}
+
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+	/** Pad the lightbox image */
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 2%;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}
+
+
+
+
+.imgContent
+{
+    display:inline-block;
+    border:0;
+    width:250px;
+    height:auto;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+
+}
+.imgContent:hover
+{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 400ms ease-in;
+    -webkit-transform: scale(1.8);
+    -ms-transition: all 400ms ease-in;
+    -ms-transform: scale(1.8);   
+    -moz-transition: all 400ms ease-in;
+    -moz-transform: scale(1.8);
+    transition: all 400ms ease-in;
+    transform: scale(1.8);
+}
