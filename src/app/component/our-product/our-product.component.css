@@ -117,9 +117,6 @@
 	display: block;
 }
 
-
-
-
 .imgContent
 {
     display:inline-block;
@@ -139,6 +136,12 @@
 }
 .imgContent:hover
 {
+/*     
+        background-image: url('https://firebasestorage.googleapis.com/v0/b/gallery-shop.appspot.com/o/Banner.jpg?alt=media&token=a2f16f79-ef68-4f36-9418-3df0cb420d6c');
+        background-size: 30%;
+        background-image: no-repeat;
+     */
+  
     box-shadow: 0px 0px 150px #000000;
     z-index: 2;
     -webkit-transition: all 400ms ease-in;
@@ -149,4 +152,49 @@
     -moz-transform: scale(1.8);
     transition: all 400ms ease-in;
     transform: scale(1.8);
+
+    
 }
+
+
+
+  .flip > .front{
+    position:absolute;
+    transform: perspective( 600px ) rotateY( 0deg );
+    /* background-image: url('http://i64.tinypic.com/xbfus3.png');  */
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:250px;
+    height:250px;
+    border-radius:7px;
+    backface-visibility:hidden;
+    transition: transform .5s linear 0s;
+  }
+  .flip > .back{
+   position:absolute;
+      transform: perspective( 600px ) rotateY( 180deg );
+       /* background-image: url('https://firebasestorage.googleapis.com/v0/b/gallery-shop.appspot.com/o/Banner.jpg?alt=media&token=a2f16f79-ef68-4f36-9418-3df0cb420d6c');  */
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:250px;
+    height:250px;
+    border-radius: 7px;
+      backface-visibility: hidden;
+      transition: transform .5s linear 0s;
+      z-index: 10;
+
+  }
+  .flip:hover > .front{
+    transform: perspective( 600px ) rotateY( -180deg );
+  }
+  .flip:hover > .back{
+      display: block;
+    transform: perspective( 600px ) rotateY( 0deg );
+    transform: scale(1.5);
+    transform: translateY(center);
+    transform: translateX(center);
+
+  }
+ 

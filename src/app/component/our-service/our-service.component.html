@@ -36,7 +36,7 @@
             
         <div class="col-xs-12 col-xs-6 col-sm-3 col-md-3">
 
-            <img width="120dp" height="120dp" src={{item}} alt="" class="img-circle btn-modal" data-toggle="modal" data-target="#imgModal"
+            <img width="150dp" height="150dp" src={{item}} alt="" class="img-circle btn-modal" data-toggle="modal" data-target="#imgModal"
                 id="b1">
             <!-- <p style="text-align: center">{{item.desc}}</p> -->
 
@@ -50,9 +50,9 @@
                         </div>
                         <div *ngFor="let item of items;let i = index ">
                             <div class="modal-body" *ngIf="item != item">
-                                <div class="row">
+                                
                                     <img width="300dp" height="300dp" src={{item}} class="btn btn-modal" data-toggle="modal" data-target="#imgModal">
-                                </div>
+                                
                             </div>
                         </div>
                     </div>

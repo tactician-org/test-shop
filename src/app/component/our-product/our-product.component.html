@@ -88,13 +88,7 @@
 <!-- 
 <a id="popoverData" class="btn" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="bottom" data-original-title="Title"
     data-trigger="hover">Popover with data-trigger</a> -->
-
-<div class="container">
-    <div *ngFor="let item of itemImage">
-        <div class="col-lg-3 col-sm-6 col-md-4  col-xs-12">
-            <div class="card card-4 imgContent">
-                <img width="200px" height="200px" src={{item.items}} alt="" class="btn btn-modal popover__title" id="b1">
-                <!-- <div id="imgModal" class="modal animated bounceIn" tabindex="10" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true data-toggle="modal" data-target="#imgModal">
+<!-- <div id="imgModal" class="modal animated bounceIn" tabindex="10" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true data-toggle="modal" data-target="#imgModal">
                     
                         <div class="modal-content">
                             <div class="modal-header">
@@ -110,7 +104,25 @@
                         </div>
                     
                 </div> -->
-                <p style="text-align: center">{{item.desc}}</p>
+                <h2 style="padding-bottom: 50px; padding-top: 30px;">Our Product</h2>
+<div class="container">
+    <div *ngFor="let item of itemImage">
+        <div class="col-lg-3 col-sm-6 col-md-4  col-xs-12">
+            <div class="card card-4">
+                <div class="flip">
+                    <div class="font">
+                        <img width="200px" height="200px" src={{item.items}} >
+
+
+
+                        <p style="text-align: center">{{item.desc}}</p>
+                    </div>
+                    <div class="back card card-4">
+                        <img width="200px" height="200px" src={{item.items}} >
+
+                    </div>
+                </div>
+
             </div>
         </div>
 

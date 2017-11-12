@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { } from '@types/googlemaps';
 
 @Component({
   selector: 'app-contact',
@@ -6,23 +7,31 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  overlays: any[] = [];
 
-  constructor() { 
+  options: any;
 
-    
+
+  constructor() {
+
+
   }
+  items: any[] = ["https://firebasestorage.googleapis.com/v0/b/gallery-shop.appspot.com/o/sewing.jpg?alt=media&token=7d29010b-f05d-4e38-a4c4-cee3e4661e0e",
+    "https://firebasestorage.googleapis.com/v0/b/gallery-shop.appspot.com/o/tailor.jpg?alt=media&token=bbde075d-48b8-4979-8c57-6e11fde363b5",
+    "https://firebasestorage.googleapis.com/v0/b/gallery-shop.appspot.com/o/screen%20painting.jpg?alt=media&token=ef147b67-8d8f-478f-8de2-493f1f95ba6f",
+    "https://firebasestorage.googleapis.com/v0/b/gallery-shop.appspot.com/o/embroidering%20work%20machine.jpg?alt=media&token=ddb2d505-f964-4826-9096-1c6e489ddb49"];
 
-  items: any[] = ["https://firebasestorage.googleapis.com/v0/b/gallery-shop.appspot.com/o/phone.png?alt=media&token=926bde16-dd83-44a2-a10c-6c8f3e4be94d",
-  "https://firebasestorage.googleapis.com/v0/b/gallery-shop.appspot.com/o/location.png?alt=media&token=d1180a41-5164-4763-a2a3-31364c792e27",
-  "https://firebasestorage.googleapis.com/v0/b/gallery-shop.appspot.com/o/qr_code1600.png?alt=media&token=7b92a9fb-c181-4e0c-8022-1eb27f970938",
-  "https://firebasestorage.googleapis.com/v0/b/gallery-shop.appspot.com/o/facebook_circle_color-256.png?alt=media&token=7397b7eb-23d0-489e-bf68-28007020d435"
- ];
-  
 
   ngOnInit() {
-    
+
+    this.options = {
+      center: { lat: 13.7463783, lng: 100.5348459 },
+      zoom: 18
+
+    };
+    this.overlays.push(new google.maps.Marker({ position: { lat: 13.7463783, lng: 100.5348459 } }))
   }
- 
-  
-  
+
+
+
 }
