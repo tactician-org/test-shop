@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+// import { modalDemo } from './our-product/modalDemo';
+
 
 @Component({
   selector: 'app-our-product',

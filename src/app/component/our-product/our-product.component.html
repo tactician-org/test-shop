@@ -1,124 +1,63 @@
-<!-- <tr *ngFor="let row of buildArr(items);let i = index">
-    <td *ngFor="let item of row">
-        <div>
-            <img width="300dp" height="300dp" src={{item}} class="btn btn-primary btn-modal" data-toggle="modal" data-target="#imgModal">
-        </div>
-    </td>
-</tr> -->
-<!-- <div class="container">
-    <div class="row">
+<!-- <div ng-app="modalDemo" ng-controller="ModalDemoController">
+    <button ng-click="showModal()">Show modal</button>
+    <button ng-click="showModalFull()">Show modal full screen</button>
+    <modal>
+        This is a modal
+        <button ng-click="closeModal()">Close</button>
+    </modal>
+</div>
+
+<a href="#modal1" class="button">Open Modal</a>
 
 
-        <table st-table="rowCollection" class="table table-striped">
-            <tr *ngFor="let row of items ">
-                <th *ngFor="let item of row">
-                    <img width="100%" height="auto" src={{item}} class="btn btn-modal img-thumbnail" data-toggle="modal" data-target="#imgModal">
-                    <div id="imgModal" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button class="btn btn-secondary" data-dismiss="modal">
-                                        close
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="row">
-                                        <img width="300dp" height="300dp" src={{items}} class="btn btn-primary btn-modal" data-toggle="modal" data-target="#imgModal">
-                                    </div>
-                                </div>
-                            </div>
+<div id="modal1" class="overlay">
+    <a class="cancel" href="#"></a>
+    <div class="modal">
+        <div *ngFor="let item of itemImage">
+            <div class="col-lg-3 col-sm-6 col-md-4  col-xs-12">
+                <div class="card card-4">
+                    <div class="flip">
+                        <div class="font">
+                            <img width="200px" height="200px" src={{item.items}} class="btn" for="modal-1" data-toggle="modal" data-target="#fsModal">
+
+
+
+                            <p style="text-align: center">{{item.desc}}</p>
                         </div>
+
                     </div>
-                </th>
-            </tr>
-        </table>
-    </div>
-</div> -->
-<!-- <h3>Simple table with no thead, tbody</h3>
-<table class="table table-striped" wt-responsive-table>
-    <tr>
-        <th>Name</th>
-        <th>Version</th>
-        <th>Language</th>
-        <th>Maintainer</th>
-        <th>Stars</th>
-    </tr>
 
-</table> -->
-
-<!-- <div class="ui-g" *ngFor="let item of items">
-    <div class="ui-g-3">
-        <img width="300dp" height="300dp" src={{item}} class="btn btn-modal" data-toggle="modal" data-target="#imgModal">
-    </div>
-    <div class="ui-g-3"></div>
-    <div class="ui-g-3"></div>
-    <div class="ui-g-3"></div>
-</div> -->
-<!-- <div class="container">
-    <div class="row">
-        <div *ngFor="let item of items;let i = index ">
-
-            <div class="form-group" class="col-md-3">
-                <img width="200dp" height="200dp" src={{item}} class="btn btn-modal" data-toggle="modal" data-target="#imgModal">
-
-            </div>
-
-            <div id="imgModal" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button class="btn btn-secondary" data-dismiss="modal">
-                                close
-                            </button>
-                        </div>
-                        <div *ngFor="let item of items;let i = index ">
-                            <div class="modal-body" *ngIf="item != item">
-                                <div class="row">
-                                    <img width="300dp" height="300dp" src={{item}} class="btn btn-modal" data-toggle="modal" data-target="#imgModal">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
+            <div class="content">
+                <div class="back card card-4">
+                    <img width="90%" src={{item.items}}>
 
+                </div>
+            </div>
         </div>
     </div>
-</div> -->
-<!-- 
-<a id="popoverData" class="btn" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="bottom" data-original-title="Title"
-    data-trigger="hover">Popover with data-trigger</a> -->
-<!-- <div id="imgModal" class="modal animated bounceIn" tabindex="10" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true data-toggle="modal" data-target="#imgModal">
-                    
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button class="btn btn-secondary" data-dismiss="modal">
-                                    close
-                                </button>
-                            </div>
-                            <div>
-                                <div class="modal-body">
-                                    <img width="300dp" height="300dp" src={{item.items}}>
-                                </div>
-                            </div>
-                        </div>
-                    
-                </div> -->
-                <h2 style="padding-bottom: 50px; padding-top: 30px;">Our Product</h2>
+</div>
+
+ -->
+
+
+
+<h2 style="padding-bottom: 50px; padding-top: 30px;">Our Product</h2>
 <div class="container">
     <div *ngFor="let item of itemImage">
         <div class="col-lg-3 col-sm-6 col-md-4  col-xs-12">
             <div class="card card-4">
                 <div class="flip">
                     <div class="font">
-                        <img width="200px" height="200px" src={{item.items}} >
+                        <img width="200px" height="200px" src={{item.items}}>
 
 
 
                         <p style="text-align: center">{{item.desc}}</p>
                     </div>
                     <div class="back card card-4">
-                        <img width="200px" height="200px" src={{item.items}} >
+                        <img width="90%" src={{item.items}}>
 
                     </div>
                 </div>
@@ -129,3 +68,30 @@
 
     </div>
 </div>
+
+
+<div id="container-floating">
+    
+        <div class="nd4 nds" data-toggle="tooltip" data-placement="left" data-original-title="Edoardo@live.it"><img class="reminder">
+            <a class="letter" href="https://www.google.com/maps/?q=13.746878, 100.534857/">Map</a>
+        </div>
+    
+        <div class="nd5 nds" data-toggle="tooltip" data-placement="left" data-original-title="Simone">
+            <a class="letter" href="#product">P</a>
+
+        </div>
+        <div class="nd3 nds" data-toggle="tooltip" data-placement="left" data-original-title="contract@gmail.com">
+            <img class="reminder">
+    
+            <a class="letter" href="https://www.facebook.com/">F</a>
+        </div>
+        <div class="nd1 nds" data-toggle="tooltip" data-placement="left" data-original-title="Reminder">
+            <img src="https://cdn3.iconfinder.com/data/icons/iconic-1/32/arrow_up_alt1-512.png" id="toTop" alt="Back to top" width="40dp">
+        </div>
+    
+        <div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create" onclick="newmail()">
+            <p class="plus">+</p>
+            <img class="edit btn" src="http://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/1x/bt_compose2_1x.png">
+        </div>
+    
+    </div>
