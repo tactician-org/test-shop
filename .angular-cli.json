@@ -19,8 +19,10 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
-        
+        "styles.css",
+      
+        "assets/img/css/light-modal.css",
+        "assets/img/css/light-modal.min.css"
         
       ],
       "scripts": [

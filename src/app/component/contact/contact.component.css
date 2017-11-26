@@ -58,9 +58,11 @@
     font-size: 15px;
    
 }
+@import url('https://fonts.googleapis.com/css?family=Kanit:100|500');
 .descText{
     
-
+    font-family: 'Kanit', sans-serif ;
+    
     color: #cfcbb8;
     margin: 0 auto;
     font-size: 22px;
@@ -80,4 +82,8 @@
 {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+.p
+{
+    
 }

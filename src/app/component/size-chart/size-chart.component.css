@@ -1,0 +1,21 @@
+.imgSize{
+
+    display: inline-block;
+    height: 300px;
+    /* margin: 1rem; */
+    position: relative;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5) {     
+    .imgSize{
+  
+        display: inline-block;
+        height: 200px;
+        /* margin: 1rem; */
+        position: relative;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+     }

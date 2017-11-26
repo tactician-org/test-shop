@@ -3,3 +3,12 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+img
+{
+    z-index: -100;
+}
+p
+{
+    padding-top: 10px;
+    font-size: 18px;
+}

@@ -65,3 +65,35 @@ section.parallax.parallax-demo {
   margin-right: 1500px;
 
 }
+
+
+
+  div.banner{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/gallery-shop.appspot.com/o/Banner.jpg?alt=media&token=a2f16f79-ef68-4f36-9418-3df0cb420d6c');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    z-index: -1;
+    min-height: 100vh;
+    
+  }
+
+  @media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5) {     
+    div.banner{
+      
+      background-image: url('https://firebasestorage.googleapis.com/v0/b/gallery-shop.appspot.com/o/Banner.jpg?alt=media&token=a2f16f79-ef68-4f36-9418-3df0cb420d6c');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      -webkit-background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      max-width: auto;
+      max-height: auto;
+      -webkit-max-width: auto;
+      -webkit-max-height: auto;
+      left: 50%;
+      margin-left: -512px; 
+    }
+     }
